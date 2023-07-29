@@ -9,8 +9,9 @@ import { fadeIn } from "../../variants";
 
 const Work = () => {
   return (
-    <div className="md:overflow-visible overflow-auto h-full bg-primary/30 py-36 flex items-center">
+    <div className="md:overflow-visible overflow-auto h-[100vh] bg-primary/30 py-36 flex items-center">
       <Circles />
+     
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* text */}

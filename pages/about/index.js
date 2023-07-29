@@ -12,9 +12,10 @@ import {
 
 import {
   SiNextdotjs,
-  SiFramer,
+  SiTypescript,
   SiAdobexd,
   SiAdobephotoshop,
+  SiRedux,
 } from "react-icons/si";
 
 //  about data
@@ -23,19 +24,19 @@ export const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "Mobile and Web Development:",
         icons: [
           <FaHtml5 key={0} />,
           <FaCss3 key={1} />,
           <FaJs key={2} />,
           <FaReact key={3} />,
           <SiNextdotjs key={4} />,
-          <SiFramer key={5} />,
-          <FaWordpress key={6} />,
+          <SiTypescript key={5} />,
+          <SiRedux key={7} />,
         ],
       },
       {
-        title: "UI/UX Design",
+        title: "UI/UX Design:",
         icons: [
           <FaFigma key={0} />,
           <SiAdobexd key={1} />,
@@ -61,16 +62,30 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Founder - SwipeUp Technology",
+        // stage: "2012 - 2023",
+        // stage:
+        //   "Founder of Swipe Up Technology, focused on turning dreams into reality through technology",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Software Engineer - Linx",
+        // stage: "2010 - 2012",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Software Engineer - Midway",
+        // stage: "2008 - 2010",
+      },
+      {
+        title: "Software Engineer - Lyncas",
+        // stage: "2008 - 2010",
+      },
+      {
+        title: "Software Engineer - Banco do Brasil Americas",
+        // stage: "2008 - 2010",
+      },
+      {
+        title: "Software Engineer - Indra",
+        // stage: "2008 - 2010",
       },
     ],
   },
@@ -82,8 +97,9 @@ export const aboutData = [
         stage: "2011",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title:
+          "Computer Science Diploma - Centro Universitário de João Pessoa - UNIPÊ",
+        // stage: "2009",
       },
       {
         title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
@@ -225,7 +241,7 @@ const About = () => {
                 >
                   {/* title */}
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
+                  {/* <div className="hidden md:flex">-</div> */}
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
                     {/* icons */}

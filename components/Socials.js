@@ -23,9 +23,9 @@ const Socials = () => {
       >
         <VscGithub />
       </Link>
-      <Link href={""} className="hover:text-accent transition-all duration-300">
+      {/* <Link href={""} className="hover:text-accent transition-all duration-300">
         <RiFacebookLine />
-      </Link>
+      </Link> */}
       <Link
         href={"https://www.instagram.com/danieljeronimo_"}
         className="hover:text-accent transition-all duration-300"
@@ -33,15 +33,15 @@ const Socials = () => {
       >
         <RiInstagramLine />
       </Link>
-      <Link href={""} className="hover:text-accent transition-all duration-300">
+      {/* <Link href={""} className="hover:text-accent transition-all duration-300">
         <RiDribbbleLine />
-      </Link>
-      <Link href={""} className="hover:text-accent transition-all duration-300">
+      </Link> */}
+      {/* <Link href={""} className="hover:text-accent transition-all duration-300">
         <RiBehanceLine />
-      </Link>
-      <Link href={""} className="hover:text-accent transition-all duration-300">
+      </Link> */}
+      {/* <Link href={""} className="hover:text-accent transition-all duration-300">
         <RiPinterestLine />
-      </Link>
+      </Link> */}
     </div>
   );
 };

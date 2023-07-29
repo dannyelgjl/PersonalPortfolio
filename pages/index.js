@@ -39,8 +39,8 @@ const Home = () => {
           >
             My name is Daniel Jerônimo, I am a computer scientist passionate
             about technology, specialist in the development of web and mobile
-            platforms, working in the market for more than 10 years,
-            transforming dreams into reality
+            platforms, working in the market for more than 8 years, transforming
+            dreams into reality
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">

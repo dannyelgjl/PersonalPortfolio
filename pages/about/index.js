@@ -6,8 +6,9 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
+  FaNodeJs,
   FaFigma,
+  FaPython,
 } from "react-icons/fa";
 
 import {
@@ -16,6 +17,8 @@ import {
   SiAdobexd,
   SiAdobephotoshop,
   SiRedux,
+  SiPostgresql,
+  SiMongodb,
 } from "react-icons/si";
 
 //  about data
@@ -43,21 +46,30 @@ export const aboutData = [
           <SiAdobephotoshop key={2} />,
         ],
       },
-    ],
-  },
-  {
-    title: "awards",
-    info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "Back-End:",
+        icons: [
+          <FaNodeJs key={0} />,
+          <FaPython key={1} />,
+          <SiPostgresql key={2} />,
+          <SiMongodb key={3} />,
+        ],
       },
     ],
   },
+  // {
+  //   title: "awards",
+  //   info: [
+  //     {
+  //       title: "Hackthon Awards - Honoree",
+  //       stage: "2011 - 2012",
+  //     },
+  //     {
+  //       title: "Adobe Design Achievement Awards - Finalist",
+  //       stage: "2009 - 2010",
+  //     },
+  //   ],
+  // },
   {
     title: "experience",
     info: [
@@ -92,18 +104,38 @@ export const aboutData = [
   {
     title: "credentials",
     info: [
-      {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-      },
+      // {
+      //   title: "BootCamp - Rocketseat",
+      //   stage: "2011",
+      // },
       {
         title:
-          "Computer Science Diploma - Centro Universitário de João Pessoa - UNIPÊ",
+          "Computer Science University Degree - University Center of João Pessoa - UNIPÊ",
         // stage: "2009",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Certified Bootcamp - Rocketseat",
+        stage: "2019",
+      },
+      {
+        title: "Certified Bootcamp - Rocketseat",
+        stage: "2020",
+      },
+      {
+        title: "Certified Ignite - Rocketseat",
+        stage: "2021",
+      },
+      {
+        title: "Certified Ignite - Rocketseat",
+        stage: "2022",
+      },
+      {
+        title: "Certified Ignite - Rocketseat",
+        stage: "2023",
+      },
+      {
+        title: "Certified - Architecture for the Web and Mobile",
+        // stage: "2023",
       },
     ],
   },
@@ -156,7 +188,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I began freelancing as a developer. Since then, Ive
+            8 years ago, I began freelancing as a developer. Since then, Ive
             done remote work for agencies, counsulted for startups, and
             collaborated on digital products for business and consumer use.
           </motion.p>
@@ -172,7 +204,7 @@ const About = () => {
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={8} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of experience
@@ -181,16 +213,16 @@ const About = () => {
               {/* clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} /> +
+                  <CountUp start={0} end={15} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied clients
+                  Completed courses
                 </div>
               </div>
               {/* projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} /> +
+                  <CountUp start={0} end={30} duration={8} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished projects
@@ -199,10 +231,10 @@ const About = () => {
               {/* awards */}
               <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} /> +
+                  <CountUp start={0} end={4} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Winning awards
+                  Winning Hackathon
                 </div>
               </div>
             </div>

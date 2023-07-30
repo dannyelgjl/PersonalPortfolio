@@ -47,7 +47,7 @@ const Home = () => {
             <ProjectsBtn />
           </div>
           <motion.div
-            variants={fadeIn("down", 1)}
+            variants={fadeIn("down", 0.5)}
             initial="hidden"
             animate="show"
             exit="hidden"

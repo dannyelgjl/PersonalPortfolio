@@ -80,7 +80,7 @@ export const aboutData = [
         //   "Founder of Swipe Up Technology, focused on turning dreams into reality through technology",
       },
       {
-        title: "Software Engineer - Linx",
+        title: "Software Engineer - Sem Parar",
         // stage: "2010 - 2012",
       },
       {
@@ -156,7 +156,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="md:overflow-visible overflow-auto h-full bg-primary/30 py-32 text-center xl:text-left" >
+    <div className="md:overflow-visible overflow-auto h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
       {/* avatar img */}
       <motion.div
